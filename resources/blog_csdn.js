@@ -1,10 +1,8 @@
 (() => {
     let toolbar = document.querySelector('div.toolbar-container'),
         content = document.querySelector('main div.blog-content-box');
-    if (!toolbar || !content) {
-        console.log('return');
+    if (!toolbar || !content)
         return;
-    }
     let button = document.createElement('button');
     button.appendChild(document.createTextNode('copy'));
     button.classList.add('md_button');
@@ -28,7 +26,7 @@
                 this.dataset.title = 'copied';
                 this.addEventListener('mouseout', function () {
                     this.dataset.title = 'copy';
-                    this.style.opacity='0.8';
+                    this.style.opacity = '0.8';
                 }, { once: true });
             });
         });
