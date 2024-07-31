@@ -1,0 +1,28 @@
+{
+    "name": "My Extension",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "An extension for myself.",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://jiaoyu.taobao.com/course/*"
+            ],
+            "js": [
+                "resources/jiaoyu_taobao.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://blog.csdn.net/*",
+                "https://*.blog.csdn.net/*"
+            ],
+            "js": [
+                "resources/blog_csdn.js"
+            ],
+            "css": [
+                "resources/material-design.css"
+            ]
+        }
+    ]
+}
