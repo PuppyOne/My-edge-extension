@@ -36,6 +36,14 @@
             "js": [
                 "scripts/bilibili.js"
             ]
+        },
+        {
+            "matches": [
+                "https://www.chunkbase.com/apps/*"
+            ],
+            "js": [
+                "scripts/chunkbase.js"
+            ]
         }
     ]
 }
